@@ -38,7 +38,7 @@ public class PrestamosController {
     }
 
     @GetMapping("/id/{id}")
-    public Prestamos findById(@RequestBody Long id) {
+    public Prestamos findById(@PathVariable Long id) {
         return prestamosService.findById(id);
     }
 
